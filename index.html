@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Striveflix</title>
 </head>
 <body>
     <!-- 1. create a logo anchor on the top left of the page
@@ -20,17 +21,20 @@
             
             
 
-    <div role ="navigation">
-        <a href= "http://www.google.com"><nav class=".navbar-brand">Striveflix</nav></a>
+    <div id="homelogo" role ="navigation">
+        <a href= "http://www.google.com" class=".navbar-brand">
+            <img src= "photo/Striveflix.png" width="150 px">
+        </a>
     </div>
 
-    <section>
+    <section class="container">
         <h1>Edit Profile</h1>
+        <hr class="line">
         <img src="https://placeimg.com/150/150/people">
-        <input type="text" placeholder="username"> <!-- username-->
+        <input id="username" type="text" placeholder="username"> <!-- username-->
         <input type="checkbox"> Kid? <br> <!-- checkbox to check if it's a kid-->
         <h3>Language:</h3>
-        <select data-placeholder="Choose a Language..."> <!-- to select the language-->
+        <select id="language" data-placeholder="Choose a Language..."> <!-- to select the language-->
                 <option value="Afrikanns">Afrikanns</option>
                 <option value="Albanian">Albanian</option>
                 <option value="Arabic">Arabic</option>
@@ -105,16 +109,19 @@
                 <option value="Xhosa">Xhosa</option>
               </select> 
 
-        <h3>Allowed TV shows and movies</h3>
-        <select>
-            <option value="PG-13">For Little Kids only</option>
-            <option value ="PG-13">For Older Kids and below</option>
-            <option value="G">All age group</option>
-        </select> <!-- Drop down options with a selection for only for children or for older kids and below or all age group -->
-        
-        <button type="submit" value="Submit">SAVE</button> <!-- To save changes-->
-        <button type="reset" value="Reset">CANCEL</button> <!-- To cancel the process of editing profile-->
-        <button type="button" value="Delete">DELETE</button> <!-- To delete profile (i.e cancel subscription)-->
+    <h3>Allowed TV shows and movies</h3>
+    <select id="agegroup">
+        <option value="PG-13">For Little Kids only</option>
+        <option value ="PG-13">For Older Kids and below</option>
+        <option value="G">All Age Group</option>
+    </select> <!-- Drop down options with a selection for only for children or for older kids and below or all age group -->
+    
+    <hr class="line">
+    <br>
+
+    <button type="submit" value="Submit" class="btn btn-secondary">SAVE</button> <!-- To save changes-->
+    <button type="reset" value="Reset" class="btn btn-secondary">CANCEL</button> <!-- To cancel the process of editing profile-->
+    <button type="button" value="Delete" class="btn btn-secondary">DELETE PROFILE</button> <!-- To delete profile (i.e cancel subscription)-->
         
     </section>
 

@@ -27,14 +27,22 @@
         </a>
     </div>
 
-    <section class="container">
+    <section class="row" style="
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center;
+">
+
+    <div>
         <h1>Edit Profile</h1>
         <hr class="line">
-        <img src="https://placeimg.com/150/150/people">
-        <input id="username" type="text" placeholder="username"> <!-- username-->
-        <input type="checkbox"> Kid? <br> <!-- checkbox to check if it's a kid-->
-        <h3>Language:</h3>
-        <select id="language" data-placeholder="Choose a Language..."> <!-- to select the language-->
+        <div class= "row">
+            <img src="https://placeimg.com/150/150/people" class="col-4">
+            <div class="col-8">
+            <input id="username" type="text" placeholder="username"> <!-- username-->
+            <input type="checkbox"> Kid? <br> <!-- checkbox to check if it's a kid-->
+            <p class="lang">Language:<p>
+            <select id="language" data-placeholder="Choose a Language..."> <!-- to select the language-->
                 <option value="Afrikanns">Afrikanns</option>
                 <option value="Albanian">Albanian</option>
                 <option value="Arabic">Arabic</option>
@@ -109,20 +117,23 @@
                 <option value="Xhosa">Xhosa</option>
               </select> 
 
-    <h3>Allowed TV shows and movies</h3>
+    <p>Allowed TV shows and movies<p>
     <select id="agegroup">
         <option value="PG-13">For Little Kids only</option>
         <option value ="PG-13">For Older Kids and below</option>
         <option value="G">All Age Group</option>
     </select> <!-- Drop down options with a selection for only for children or for older kids and below or all age group -->
-    
+
+
+</div>  
+</div>
     <hr class="line">
-    <br>
 
     <button type="submit" value="Submit" class="btn btn-secondary">SAVE</button> <!-- To save changes-->
     <button type="reset" value="Reset" class="btn btn-secondary">CANCEL</button> <!-- To cancel the process of editing profile-->
     <button type="button" value="Delete" class="btn btn-secondary">DELETE PROFILE</button> <!-- To delete profile (i.e cancel subscription)-->
-        
+    
+        </div>
     </section>
 
 
